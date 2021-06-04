@@ -1,6 +1,6 @@
 var fs = require('fs')
 
-var filePath = 'writemonkey3_sheets';
+var filePath = process.argv[2];
 
 var fileContent = fs.readFileSync(filePath, 'utf8');
 var data = fileContent.split("\n");
