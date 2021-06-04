@@ -21,5 +21,6 @@ for (var i in data)
 
 for (var i in documents)
 {
+	console.log(documents[i].nam);
 	fs.writeFileSync(documents[i].nam + '.md', documents[i].txt, 'utf8');
 }
